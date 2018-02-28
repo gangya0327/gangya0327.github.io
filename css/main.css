@@ -92,6 +92,20 @@ nav {
 	display: inline-block;
 	vertical-align: middle;
 }
+.narrow-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.narrow-header .head-div {
+	padding: 0;
+}
+.narrow-header .logo-block>h3 {
+	margin: 0;
+}
+.narrow-header .nav-ul>li {
+	margin: 0;
+}
 .content-div {
 	margin: 40px auto 50px;
 	color: #555;

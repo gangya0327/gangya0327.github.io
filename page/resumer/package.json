@@ -1,0 +1,11 @@
+{
+  "name": "resumer",
+  "version": "1.0.0",
+  "description": "我的个简历\u001b[D\u001b[D\u001b[\u001b[3~\u001b[3\u001b[3~\u001b[3~\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[C简历",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "raven",
+  "license": "ISC"
+}

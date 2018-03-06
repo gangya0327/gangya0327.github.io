@@ -20,6 +20,8 @@ import './assets/reset.css'
 import Topbar from './components/Topbar'
 import ResumerEditor from './components/ResumerEditor'
 import ResumerPreview from './components/ResumerPreview'
+import './assets/iconfont.js'
+
 export default {
   name: 'App',
   data: function () {

@@ -19,7 +19,7 @@ export default {
 }
 #topbar>.wrapper {
   min-width: 1024px;
-  min-width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   height: 64px;
 }
@@ -27,6 +27,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 16px;
 }
 #topbar .logo {
   font-size: 24px;

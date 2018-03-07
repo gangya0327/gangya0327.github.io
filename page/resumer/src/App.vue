@@ -20,39 +20,40 @@ import './assets/reset.css'
 import Topbar from './components/Topbar'
 import ResumerEditor from './components/ResumerEditor'
 import ResumerPreview from './components/ResumerPreview'
-import './assets/iconfont.js'
+import icons from './assets/icons.js'
+
+import store from './store/index'
 
 export default {
   name: 'App',
-  data: function () {
-    return {
-      text: '你好'
-    }
-  },
-  components: {Topbar, ResumerEditor, ResumerPreview}
+  store,
+  components: {Topbar, ResumerEditor, ResumerPreview},
+  created() {
+    document.body.insertAdjacentHTML('afterbegin', icons)
+  }
 }
 </script>
 
-<style>
+<style lang="scss">
 .page {
   height: 100vh;
   display: flex;
   flex-direction: column;
   background: #eaebec;
-}
-.page>main {
-  flex-grow: 1;
-}
-.page>main {
-  min-width: 1024px;
-  max-width: 1440px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 16px;
-  align-self: center;
-  width: 100%;
+  >main {
+    flex-grow: 1;
+  }
+  >main {
+    min-width: 1024px;
+    max-width: 1440px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    align-self: center;
+    width: 100%;
+  }
 }
 #resumerPreview {
   width: 61.667%;
@@ -63,5 +64,12 @@ export default {
 #resumerEditor {
   width: 35%;
   background: #444;
+}
+svg.icon {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  vertical-align: -0.1em;
+  font-size: 16px;
 }
 </style>

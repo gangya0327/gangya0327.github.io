@@ -33,14 +33,14 @@
 export default {
   name: 'ResumerEditor',
   computed: {
-  	selected: {
-  		get(){
-  			return this.$store.state.selected
-  		},
-  		set(value){
-  			return this.$store.state.commit('switchTab', value)
-  		}
-  	},
+  	selected:{
+        get(){
+          return this.$store.state.selected
+       },
+        set(value){
+          return this.$store.commit('switchTab', value)
+        }
+    },
   	resume(){
   		return this.$store.state.resume
   	}

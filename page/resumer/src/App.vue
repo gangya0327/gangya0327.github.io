@@ -62,7 +62,7 @@ export default {
   margin-left: 16px;
 }
 #resumerEditor {
-  width: 35%;
+  min-width: 35%;
   background: #444;
 }
 svg.icon {

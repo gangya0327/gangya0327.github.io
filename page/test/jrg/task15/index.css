@@ -1,0 +1,351 @@
+/*reset.css*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+.btn {
+	border: none;
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 2px;
+	padding: 10px 20px;
+}
+.btn:hover {
+	background: #222;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* index.html */
+nav {
+	width: 700px;
+	position: absolute;
+	margin: 40px;
+	color: #000;
+	z-index: 99;
+}
+nav .title {
+	font-size: 38px;
+	font-weight: 700;
+	margin: 10px;
+}
+nav ul {
+	float: right;
+	position: absolute;
+  right: 0;
+  bottom: 0;
+}
+nav ul li {
+	float: left;
+	margin-left: 30px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+}
+header {
+	background-image: url('./img/header-bg3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -20px;
+}
+header .wel {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 450px 0 120px;
+	text-align: center;
+}
+header .wel .wel-span {
+	color: #000;
+	font-size: 40px;
+	font-weight: 700;
+}
+header .wel .wel-name {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 50px;
+	color: #666;
+}
+header .wel .wel-btn {
+	margin-top: 20px;
+}
+.intro,
+.cast,
+.movie,
+.empire,
+.contact,
+.family,
+.footer {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+.intro .title,
+.cast .title,
+.movie .title,
+.empire .title,
+.contact .title {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+.intro .subtitle,
+.cast .subtitle,
+.movie .subtitle,
+.empire .subtitle,
+.contact .subtitle {
+	color: #666;
+	padding: 0 100px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+}
+.intro .intro-list li,
+.cast .cast-list li {
+	margin-top: 80px;
+	width: 390px;
+	float: left;
+	text-align: center;
+}
+.intro .intro-list li .photo,
+.cast .cast-list li .photo {
+	width: 300px;
+	height: 165px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.intro .intro-list li .photo img,
+.cast .cast-list li .photo img {
+	width: 100%;
+}
+.intro .intro-list li .name {
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	letter-spacing: 20px;
+}
+.intro .intro-list li .content {
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.cast .cast-list li {
+	width: 292px;
+	margin-top: 30px;
+}
+.cast .cast-list li .photo {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+.cast .cast-list li .photo:hover {
+	background: url(./img/cast-bleach.jpg) -5px center;
+	background-size: 250px 250px;
+}
+.cast .cast-list li .photo:hover img {
+	display: none;
+}
+.cast .cast-list li .photo img {
+	height: 250px;
+	width: auto;
+}
+section:nth-child(2n) {
+	background: rgb(211,211,211);
+}
+.cast .cast-list li .name {
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.cast .cast-list li .content {
+	font-size: 14px;
+	color: #666;
+}
+.movie .movie-list li {
+	margin-top: 80px;
+	position: relative;
+}
+.movie .movie-list .circle {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 5px solid #ccc;
+}
+.movie .movie-list .detail {
+	position: absolute;
+	top: 0;
+	width: 27em;
+	text-align: right;
+}
+.movie .movie-list li:nth-child(2n) .detail {
+	left: 50%;
+	margin-left: 150px;
+	text-align: left;
+}
+.movie .movie-list .detail .name {
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+.movie .movie-list .detail .time,
+.movie .movie-list .detail .content {
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+}
+.movie .movie-list li:after {
+	content: '';
+	display: block;
+	height: 80px;
+	border-left: 1px solid #ccc;
+	position: absolute;
+	left: 50%;
+}
+.movie .movie-list li:last-child:after {
+	display: none;
+}
+.empire .empire-list .item .circle {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 5px solid #666;
+}
+.empire .empire-list .item .circle img {
+	height: 200px;
+}
+.empire .empire-list {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+.empire .empire-list .item {
+	text-align: center;
+}
+.empire .empire-list .item .name {
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.empire .empire-list .item .content {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 20px;
+}
+.empire .empire-list .item .ablity button {
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.empire .empire-list .item .ablity .iconfont {
+	font-size: 20px;
+}
+.empire .empire-list .item .ablity button:hover {
+	background: orange;
+	color: black;
+}
+.family {
+	display: flex;
+	justify-content: space-around;
+}
+.family .item {
+	font-size: 20px;
+	font-weight: 700;
+}
+.family .item a {
+	color: #666;
+}
+.contact .contact-form {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+.contact .contact-form .detail {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	margin: 0 1%;
+	float: left;
+}
+.contact .contact-form .detail input {
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	border: none;
+}
+.contact .contact-form .detail input::-webkit-input-placeholder,
+.contact .contact-form .message textarea::-webkit-input-placeholder {
+	font-weight: 700;
+	font-family: Arial;
+}
+.contact .contact-form .message {
+	width: 50%;
+	float: left;
+}
+.contact .contact-form .message textarea {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+	height: 168px;
+}
+.contact .message-btn {
+  margin: 0 auto;
+  display: block;
+  font-weight: 700;
+  padding: 20px 40px;
+  margin-bottom: 40px;
+}
+.footer {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-around;
+}

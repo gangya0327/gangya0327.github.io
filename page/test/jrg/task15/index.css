@@ -190,6 +190,9 @@ header .wel .wel-btn {
 	height: 250px;
 	width: auto;
 }
+section {
+	min-width: 1170px;
+}
 section:nth-child(2n) {
 	background: rgb(211,211,211);
 }
@@ -331,10 +334,10 @@ section:nth-child(2n) {
 	float: left;
 }
 .contact .contact-form .message textarea {
-	padding: 20px;
+	padding: 20px 3%;
 	border-radius: 5px;
 	border: none;
-	width: 100%;
+	width: 94%;
 	height: 168px;
 }
 .contact .message-btn {

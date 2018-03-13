@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*myreset*/
+
+/*login*/
+body {
+	background-image: url(./img/background.png);
+	background-repeat: repeat;
+	background-position: center center;
+	height: 100vh;
+}
+.container {
+	color: rgb(98,94,91);	
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+}
+.container .title {
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 40px;
+	color: rgb(98,94,91);
+}
+.container .yahei {
+	font-family: "微软雅黑";
+}
+.container .brush {
+	font-family: "Brush Script Std";
+	font-size: 30px;
+}
+.container .login {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	background: rgb(228, 224, 220);
+	box-shadow: 0px 1px 2px 1px #aaaaaa, inset 0px 1px 1px rgba(255,255,255,0.7);
+	padding: 20px 18px;
+	border-radius: 5px;
+}
+.container .login>div {
+	display: inline-block;
+	margin: 12px;
+	text-align: left;
+}
+.container .login .inp {
+	position: relative;
+}
+.container .login .inp .iconfont {
+	position: absolute;
+	top: 10px;
+    font-size: 20px;
+    left: 8px;
+}
+.container .login .inp input {
+	height: 40px;
+	width: 190px;
+	padding: 0 35px;
+	border: none;
+	background: #e1dcd8;
+	color: rgb(98,94,91);
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.7), inset 0px 2px 5px #aaaaaa;
+}
+.container .login .inp input:focus {
+	background: #fff;
+}
+.container .login .ckb>label {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	position: relative;
+}
+.container .login .ckb .check {
+	position: absolute;
+	display: block;
+	width: 24px;
+	height: 24px;
+	border: 1px solid;
+	top: 0;
+	left: 0;
+}
+.container .login .ckb .check:after {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 12px;
+	border-top: 3px solid #74884a;
+	border-right: 3px solid #74884a;
+	transform: rotate(130deg);
+	position: absolute;
+	top: 5px;
+	left: 4px;
+	opacity: 0.4;
+}
+.container .login .ckb #remeber:hover:after {
+	opacity: 1;
+}
+.container .login .ckb #remeber:checked:after {
+	opacity: 1;
+}
+.container .login .ckb #remeber,
+.container .login .ckb span {
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: 700;
+}
+.container .login .forget a {
+	font-size: 14px;
+	font-family: 黑体;
+	color: rgb(152,142,135);
+	text-decoration: none;
+}
+.container .login .sub button {
+	height: 40px;
+	width: 100%;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#94aa64),
+		color-stop(0.50, #7a924a),
+		to(#607738));
+	border: 1px solid #7d8862;
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.3), 0px 0px 0px rgba(255,255,255,0);
+	box-shadow: 0px 1px 0px rgba(170,170,170,1), inset 0px 1px 1px rgba(255,255,255,0.7);
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+	margin: 40px 0 0;
+	font-size: 12px;
+	font-family: 黑体;
+	text-align: center;
+}
+.footer a {
+	color:rgb(152,142,135);
+}

@@ -36,7 +36,31 @@ ol, ul {
     display: block;
     clear: both;
 }
-
+a {
+    text-decoration: none;
+    color: #000;
+}
+button {
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+    width: 5px;
+    background-color:transparent ; 
+} 
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background:#ababab;   
+    cursor:pointer;
+    border-radius: 5px;    
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#ababab ; 
+    cursor:pointer;
+}
 /*music*/
 .wrapper {
     width: 1150px;
@@ -51,23 +75,371 @@ header {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
+.top-bar .top-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 9px;
+    margin-top: 5px;
+}
+header .top-bar .close {
+    background: #fc655f;
+}
+header .top-bar .minimize {
+    background: #fbbe3d;
+}
+header .top-bar .adjust {
+    background: #34cc4e;
+}
+header .top-line {
+    margin-top: 9px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+header .top-line .logo {
+    float: left;
+}
+@font-face { 
+    font-family: fashionZh; 
+    src: url('./img/fashionZh.ttf'); 
+}
+header .top-line .logo:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+header .top-line .logo img {
+    vertical-align: middle;
+}
+header .top-line .logo span {
+    font-family: fashionZh;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #fff;
+    vertical-align: middle;
+}
+header .top-line .page {
+    float: left;
+    margin-left: 85px;
+}
+header .top-line .page div {
+    float: left;
+    padding: 6px 7px;
+    border-radius: 2px;
+    background: #bb2613;
+    opacity: 0.6;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,.1);
+}
+header .top-line .page div:hover,
+header .top-line .page .checked {
+    background: #bf3119;
+    opacity: 1;
+}
+header .top-line .page div img {
+    width: 14px;
+}
+header .top-line .search {
+    position: relative;
+    flex-grow: 1;
+}
+header .top-line .search img {
+    position: absolute;
+    top: 7px;
+    left: 20px;
+}
+header .top-line #search {
+    width: 243px;
+    height: 26px;
+    margin-left: 14px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 30px;
+}
+header .top-line .user {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+header .top-line .user .mail {
+    width: 20px;
+    margin-right: 35px;
+    margin-bottom: 2px;
+}
+header .top-line .user .set {
+    width: 24px;
+    margin-right: 44px;
+}
+header .top-line .user .line {
+    border-left: 3px solid #ad230a;
+    position: absolute;
+    height: 70px;
+    top: -29px;
+    right: 75px;
+}
+header .top-line .user .avatar {
+    border-radius: 50%;
+}
+header .top-line .user .down {
+    border-top: 6px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    display: inline-block;
+    margin: 0 10px 10px 2px;
+}
 .container {
     width: 100%;
 }
 aside {
     height: 624px;
-    width: 230px;
+    width: 228px;
     background-color: #ecefee;
-    float: left;    
+    float: left;
+    border-right: 2px solid #d6d6d6;
+    position: relative;
+}
+aside .column-list {
+    height: 529px;
+    overflow: auto;
+}
+aside .column-list .item p {
+    font-size: 14px;
+    color: #aaa;
+    padding: 8px 12px;
+    position: relative;
+}
+aside .column-list .item p.more:after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    position: absolute;
+    top: 11px;
+    right: 22px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+aside .column-list .item li {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    height: 35px;
+    font-size: 14px;
+    color: #424544;
+}
+aside .column-list .item li span {
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+aside .column-list .item li:hover {
+    background: #dbdbdb;
+}
+aside .column-list .item li.selected {
+    background: #dbdbdb;
+    border-left: 3px solid #d71a25;
+}
+aside .column-list .item li img {
+    width: 22px;
+    height: 20px;
+    margin-right: 13px;
+}
+aside .playing {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 93px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #d6d6d6;    
+}
+aside .playing img {
+    width: 70px;
+    height: 70px;
+}
+aside .playing .song-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5px;
+    height: 50%;
+}
+aside .playing .song-detail .name {
+    font-size: 16px;
+    width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+aside .playing .song-detail .singer {
+    font-size: 14px;
+    color: #aaa;
+}
+aside .playing .operate {
+    margin-left: 5px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+aside .playing .operate img {
+    width: 20px;
+    height: 20px;
 }
 main {
     height: 624px;
     margin-left: -230px;
     background-color: #fff;
 }
+main .row-list {
+    height: 50px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .6);
+}
 footer {
-    height: 74px;
+    height: 72px;
     background-color: #efefef;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #d6d6d6;
+}
+footer .plays {
+    display: flex;
+    align-items: center;
+}
+footer .plays button {
+    background: #d43d3d;
+    border-radius: 50%;    
+    border: none;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .plays button img {
+    width: 20px;
+    height: 20px;
+}
+footer .plays button.play {
+    width: 40px;
+    height: 40px;
+}
+footer .plays button.play img {
+    width: 25px;
+    height: 25px;
+}
+footer .plays button.prep,
+footer .plays button.pos {
+    width: 35px;
+    height: 35px;
+}
+footer .progress {
+    margin-left: 48px;
+    width: 467px;
+    border-radius: 5px;
+    height: 5px;
+    background: #aaa;
+}
+footer .progress .played {
+    width: 230px;
+    height: 5px;
+    background: #cb1e2a;
+    border-radius: 5px;
+    position: relative;
+}
+footer .progress .played:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    display: block;
+    border-radius: 50%;
+    background: #cb1e2a;
+    border: 7px solid #fff;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,.2);
+    position: absolute;
+    top: -7px;
+    left: 230px;
+    cursor: pointer;
+}
+footer .countdown {
+    margin-left: 15px;
+    color: #aaa;
+    font-size: 14px;
+}
+footer .volume {
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+}
+footer .volume img {
+    width: 25px;
+}
+footer .volume .volume-max {
+    margin-left: 5px;
+    width: 115px;
+    border-radius: 5px;
+    height: 5px;
+    background: #aaa;
+}
+footer .volume .volume-max .volume-now {
+    width: 70px;
+    height: 5px;
+    background: #cb1e2a;
+    border-radius: 5px;
+    position: relative;
+}
+footer .volume .volume-max .volume-now:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,.2);
+    position: absolute;
+    top: -2px;
+    left: 70px;
+    cursor: pointer;
+}
+footer .loop {
+    margin-left: 24px;
+}
+footer .loop img {
+    width: 21px;
+}
+footer .lrc {
+    margin-left: 16px;
+}
+footer .lrc button {
+    border: 2px solid rgba(99, 102, 102, 0.7);
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    color: #636666;
+    font-size: 12px;
+}
+footer .list {
+    margin-left: 14px;    
+}
+footer .list a {
+    display: flex;
+    align-items: center;
+}
+footer .list img {
+    width: 20px;
+}
+footer .list span {
+    background: #b3b6b8;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 4px 5px;
 }

@@ -9,12 +9,188 @@
 </head>
 <body>
     <div class="wrapper">
-        <header></header>
+        <header>
+            <div class="top-bar clearfix">
+                <div class="close top-btn"></div>
+                <div class="minimize top-btn"></div>
+                <div class="adjust top-btn"></div>
+            </div>
+            <div class="top-line">
+                <h1 class="logo">
+                    <img src="./img/music-logo.png" alt="">
+                    <span>网易云音乐</span>
+                </h1>
+                <div class="page">
+                    <a href=""><div class="back checked"><img src="./img/page-back.png" alt=""></div></a>
+                    <a href=""><div class="forward"><img src="./img/page-forward.png" alt=""></div></a>
+                </div>
+                <div class="search">
+                    <img src="./img/music-search.png" alt="">
+                    <input type="text" id="search" placeholder="搜索音乐，歌手，歌词，用户">
+                </div>                
+                <div class="user">
+                    <a href=""><img src="./img/music-mail.png" alt="" class="mail"></a>
+                    <a href=""><img src="./img/music-set.png" alt="" class="set"></a>
+                    <span class="line"></span>
+                    <a href="">
+                        <img src="./img/music-user.jpg" alt="" class="avatar">
+                        <span class="down"></span>
+                    </a>
+                </div>
+            </div>
+        </header>
         <div class="container">
-            <aside></aside>
-            <main></main>
+            <aside>
+                <div class="column-list">
+                    <div class="item">
+                        <p>推荐</p>
+                        <ul>
+                            <li class="selected">
+                                <img src="./img/music-music.png" alt="" class="music">
+                                <span>发现音乐</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-fm.png" alt="" class="fm">
+                                <span>私人FM</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-mv.png" alt="" class="mv">
+                                <span>MV</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-friend.png" alt="" class="friend">
+                                <span>朋友</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <p class="more">我的音乐</p>
+                        <ul>
+                            <li>
+                                <img src="./img/music-itune.png" alt="" class="music">
+                                <span>iTunes音乐</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-download.png" alt="" class="music">
+                                <span>下载的音乐</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <p>创建的歌单</p>
+                        <ul>
+                            <li>
+                                <img src="./img/music-like.png" alt="" class="music">
+                                <span>我喜欢的音乐</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>周杰伦 热门50单曲</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>李荣浩 热门50单曲</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>赵雷 热门50单曲</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>陈粒 热门50单曲</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>万物皆有痕 那是光照进来的地方</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>震撼纯音＆史诗神级BGM</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>乘风破浪 电影原声带</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>国语歌的少女心max，听完就想谈恋爱</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>电影经典台词对白</span>
+                            </li>
+                            <li>
+                                <img src="./img/music-li.png" alt="" class="music">
+                                <span>日系电音丨随着歌声 让昏睡的神经清醒起来</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="playing">
+                    <img src="./img/fob.jpg" alt="" class="song-face">
+                    <div class="song-detail">
+                        <a href=""><p class="name">The Phoenix(Save Rock And Roll)</p></a>
+                        <p class="singer">Fall Out Boy</p>
+                    </div>
+                    <div class="operate">
+                        <div class="relay">
+                            <a href=""><img src="./img/music-transmit.png" alt=""></a>
+                        </div>
+                        <div class="like">
+                            <a href=""><img src="./img/music-loved.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <div class="row-list">
+                    <ul>
+                        <li><span>推荐</span></li>
+                        <li><span>排行榜</span></li>
+                        <li><span>歌单</span></li>
+                        <li><span>主播电台</span></li>
+                        <li><span>最新音乐</span></li>
+                    </ul>
+                </div>
+            </main>
         </div>
-        <footer></footer>
+        <footer>
+            <div class="plays">
+                <button class="prep">
+                    <img src="./img/music-prep.png" alt="">
+                </button>
+                <button class="play">
+                        <img src="./img/music-play.png" alt="">
+                </button>
+                <button class="pos">
+                        <img src="./img/music-pos.png" alt="">
+                </button>
+            </div>
+            <div class="progress">
+                <div class="played"></div>
+            </div>
+            <div class="countdown">
+                <span class="pass">02:13</span>/<span class="total">04:46</span>
+            </div>
+            <div class="volume">
+                <img src="./img/music-volume.png" alt="">
+                <div class="volume-max">
+                    <div class="volume-now"></div>
+                </div>
+            </div>
+            <div class="loop">
+                <a href=""><img src="./img/music-loop.png" alt=""></a>
+            </div>
+            <div class="lrc">
+                <button>词</button>
+            </div>
+            <div class="list">
+                <a href="">
+                    <img src="./img/music-list.png" alt="">
+                    <span class="count">37</span>
+                </a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

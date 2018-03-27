@@ -1,6 +1,6 @@
 /**index.wxss**/
 page {
-    background: #F6F6F6;
+    background: lightblue;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

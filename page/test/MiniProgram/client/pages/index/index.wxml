@@ -1,3 +1,21 @@
-<view>
-  123
-</view> <div>515</div>
+<view class='container'>
+  <view class='logo-view'>
+    <image src='aojiangico.png' class='logo-image'></image>
+    <text class='logo-title'>鳌江小学</text>
+  </view>
+  <text class='login-tip'>首次登录，请绑定学生账号</text>
+  <view class='login-form'>
+    <form>
+      <view class="txt">
+        <input placeholder="学籍号" class="" name="login-name" />
+      </view>
+      <view class="txt">
+        <input type="password" placeholder="密码" class="" name="login-password" />
+      </view>
+      <button class="btn" form-type="submit" hover-class="none">绑定账号</button>
+    </form>
+  </view>
+</view>
+
+<view>hello {{name}}</view>
+<button bindtap='changename'>Click</button>

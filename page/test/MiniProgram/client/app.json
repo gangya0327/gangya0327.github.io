@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/test/test2",
+    "pages/test/test",
     "pages/index/index",
-    "pages/logs/index",
-    "pages/test/test"
+    "pages/logs/index"
   ],
   "window": {
     "navigationBarTitleText": "Demo"
@@ -22,11 +23,17 @@
         "text": "测试",
         "iconPath": "pages/test/aojiangico.png",
         "selectedIconPath": "pages/test/chrome.png"
+      },
+      {
+        "pagePath": "pages/test/test2",
+        "text": "测试二",
+        "iconPath": "pages/test/aojiangico.png",
+        "selectedIconPath": "pages/test/firefox.png"
       }
     ],
     "color": "#33ddaa",
     "selectedColor": "#ddd666",
-    "backgroundColor": "#eeeccc",
+    "backgroundColor": "#000",
     "borderStyle": "white",
     "position": "bottom"
   },

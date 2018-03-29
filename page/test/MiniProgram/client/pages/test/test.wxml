@@ -1,0 +1,31 @@
+<view>hello {{name}}!!!</view>
+<view>{{array[1].msg}}{{count}}</view>
+<button bindtap='changename'>Click</button>
+
+<view wx:for-items="{{array}}" wx:key="index">{{array[index].msg}}</view>
+<view wx:for-items="{{array1}}" wx:key="item">{{item}}</view>
+
+<view wx:if="{{flag == 'opp'}}">OPP</view>
+<view wx:elif="{{flag == 'app'}}">APP</view>
+<view wx:else>WPP</view>
+
+<template name='staff'>
+  <view>
+    <text>First: {{firstname}}, Last: {{lastname}}</text>
+  </view>
+</template>
+<template is='staff' data='{{...staffA}}'/>
+<template is='staff' data='{{...staffB}}'/>
+<template is='staff' data='{{...staffC}}'/>
+
+<switch wx:for='{{objectArr}}' wx:key='unique' style='display: block'>{{item.id}}</switch>
+<button bindtap='switch'>Switch</button>
+<button bindtap='addToFront'>ADD TO FRONT</button>
+<switch wx:for='{{numberArr}}' wx:key='*this' style='display: block'>{{item}}</switch>
+<button bindtap='addNumberToFront'>ADD NumberToFront</button>
+
+<template name='odd'>ODD</template>
+<template name='even'>EVEN</template>
+<block wx:for='{{[1,2,3,4,5]}}'>
+  <template is='{{item%2 == 1 ? "odd" : "even"}}'></template>
+</block>

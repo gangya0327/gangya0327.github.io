@@ -1,0 +1,23 @@
+<!--pages/test/test2.wxml-->
+<text bindtap='showInfo' bindlongpress='longShowInfo' id='95257' data-hi='hello'>click me</text>
+<import src='test.wxml'/>
+<template is='staff' data='{{...staffA}}'/>
+<include src='header.wxml'/>
+
+<wxs module='m1'>
+  var msg = 'hello wxs'
+  module.exports.message = msg
+</wxs>
+<view>{{m1.message}}</view>
+
+<wxs module='m2'>
+  var getMax = function(array){
+    var max = undefined
+    for(var i = 0;i < array.length; i++){
+    max = max === undefined ? array[i] : (max > array[i] ? max : array[i])
+    }
+    return max
+  }
+  module.exports.getMax = getMax
+</wxs>
+<view>{{m2.getMax(array)}}</view>

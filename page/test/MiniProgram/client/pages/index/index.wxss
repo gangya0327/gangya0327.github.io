@@ -1,44 +1,125 @@
 /**index.wxss**/
+
 page {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-family: '雅黑';
-    height: 100vh;
-}
-.container {
   background: white;
-  padding: 50rpx 100rpx;
-}
-.container .logo-view {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: '雅黑';
+  height: 100vh;
 }
-.container .logo-view .logo-image {
-  width: 100rpx;
-  height: 100rpx;
- }
-.container .logo-view .logo-title {
-  font-size: 80rpx;
-  margin-left: 20rpx;
-  letter-spacing: 6rpx;
-  font-weight: 700
-}
-.container .login-tip {
-  font-size: 30rpx;
-  margin: 80rpx 0 60rpx;
-  color: #ccc;  
-}
-.container .login-form {
+
+.container .bg {
   width: 100%;
 }
-.container .login-form .txt {
-  margin: 40rpx 0;
-  border-bottom: 1rpx solid #ddd;  
-  font-size: 36rpx;
+
+.swiper {
+  height: 350rpx;
+  width: 100%;
 }
-.container .login-form .txt input {
-  height: 60rpx;
-  line-height: 60rpx;
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.container .welcome {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .welcome text {
+  flex-grow: 1;
+  font-size: 32rpx;
+}
+
+.container .welcome image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.container .tabValue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20rpx;
+  background-color: #fff;
+}
+
+.container .tabValue>view {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20rpx 50rpx;
+  border-radius: 3px;
+  border: 2px solid #fbab56;
+  margin: 0rpx;
+  color: #000;
+  font-size: 36rpx;
+  /* border: 1px solid #ccc;
+  border-radius: 8rpx;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, .6); */
+}
+
+.container .tabValue image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-bottom: 10rpx;
+}
+
+.container .showList {
+  padding: 10rpx 30rpx;
+}
+
+.container .showList .showTitle {
+  border-bottom: 2px solid #fbab56;
+  padding-top: 20rpx;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .showList .showTitle .more {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.container .showList .showItem {
+  margin: 18rpx 0;
+  padding: 24rpx;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+}
+
+.container .showList .showItem image {
+  width: 380rpx;
+  height: 160rpx;
+  margin-left: 36rpx;
+}
+
+.container .showList .showItem .itemTitle {
+  font-size: 34rpx;
+  color: #333;
+}
+
+.container .showList .showItem .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .showList .showItem .itemDetail {
+  font-size: 26rpx;
+  color: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

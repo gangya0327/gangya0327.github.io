@@ -1,21 +1,59 @@
 <view class='container'>
-  <view class='logo-view'>
-    <image src='aojiangico.png' class='logo-image'></image>
-    <text class='logo-title'>鳌江小学</text>
+  <view class='welcome'>
+    <text>xxx家长，欢迎进入</text>
+    <image src='user-unlogin.png'></image>
   </view>
-  <text class='login-tip'>首次登录，请绑定学生账号</text>
-  <view class='login-form'>
-    <form>
-      <view class="txt">
-        <input placeholder="学籍号" class="" name="login-name" />
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{movies}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="tabValue">
+    <view bindtap='goSingle' class='single'>
+      <image src='a3.png'></image>
+      <text>单科评价</text>
+    </view>
+    <view bindtap='goTotal' class='total'>
+      <image src='a4.png'></image>
+      <text>总体评价</text>
+    </view>
+  </view>
+  <view class='showList'>
+    <view class='showTitle'>
+      <text>风采展示</text>
+      <text bindtap='goShow' class='more'>更多</text>
+    </view>
+    <view class='showItem'>
+      <view class='content'>
+        <view class='itemTitle'>家长也需成长，专家：年轻父母比较急功近利</view>
+        <view class='itemDetail'>
+          <text class='itemTag'>亲子教育</text>
+          <text class='itemTime'>2017-08-16</text>
+        </view>
       </view>
-      <view class="txt">
-        <input type="password" placeholder="密码" class="" name="login-password" />
+      <image src='item1.jpg'></image>
+    </view>
+    <view class='showItem'>
+      <view class='content'>
+        <view class='itemTitle'>家长也需成长，专家：年轻父母比较急功近利</view>
+        <view class='itemDetail'>
+          <text class='itemTag'>亲子教育</text>
+          <text class='itemTime'>2017-08-16</text>
+        </view>
       </view>
-      <button class="btn" form-type="submit" hover-class="none">绑定账号</button>
-    </form>
+      <image src='item1.jpg'></image>
+    </view>
+    <view class='showItem'>
+      <view class='content'>
+        <view class='itemTitle'>家长也需成长，专家：年轻父母比较急功近利</view>
+        <view class='itemDetail'>
+          <text class='itemTag'>亲子教育</text>
+          <text class='itemTime'>2017-08-16</text>
+        </view>
+      </view>
+      <image src='item1.jpg'></image>
+    </view>
   </view>
 </view>
-
-<view>hello {{name}}</view>
-<button bindtap='changename'>Click</button>

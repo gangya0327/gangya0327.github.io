@@ -1,0 +1,39 @@
+<!--pages/show/show.wxml-->
+<view class='container'>
+  <view class='showList'>
+    <view class='showTitle'>
+      <text>风采展示</text>
+      <button class='more'>更多</button>
+    </view>
+    <view class='showItem'>
+      <view class='content'>
+        <view class='itemTitle'>家长也需成长，专家：年轻父母比较急功近利</view>
+        <view class='itemDetail'>
+          <text class='itemTag'>亲子教育</text>
+          <text class='itemTime'>2017-08-16</text>
+        </view>
+      </view>
+      <image src='item1.jpg'></image>
+    </view>
+    <view class='showItem'>
+      <view class='content'>
+        <view class='itemTitle'>家长也需成长，专家：年轻父母比较急功近利</view>
+        <view class='itemDetail'>
+          <text class='itemTag'>亲子教育</text>
+          <text class='itemTime'>2017-08-16</text>
+        </view>
+      </view>
+      <image src='item1.jpg'></image>
+    </view>
+    <view class='showItem'>
+      <view class='content'>
+        <view class='itemTitle'>家长也需成长，专家：年轻父母比较急功近利</view>
+        <view class='itemDetail'>
+          <text class='itemTag'>亲子教育</text>
+          <text class='itemTime'>2017-08-16</text>
+        </view>
+      </view>
+      <image src='item1.jpg'></image>
+    </view>
+  </view>
+</view>

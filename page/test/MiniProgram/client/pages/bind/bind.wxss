@@ -1,0 +1,64 @@
+/* pages/login/login.wxss */
+
+page {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: '雅黑';
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 50rpx 100rpx;
+}
+
+.container .logo-view {
+  display: flex;
+  align-items: center;
+}
+
+.container .logo-view .logo-image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.container .logo-view .logo-title {
+  font-size: 80rpx;
+  margin-left: 20rpx;
+  letter-spacing: 6rpx;
+  font-weight: 700;
+  color: #fbab56;
+}
+
+.container .login-tip {
+  font-size: 30rpx;
+  margin: 80rpx 0 60rpx;
+  color: #ccc;
+}
+
+.container .login-form {
+  width: 100%;
+}
+
+.container .login-form .txt {
+  margin: 40rpx 0;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 36rpx;
+}
+
+.container .login-form .txt input {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.container .login-form .btn {
+  background-color: #fbab56;
+  color: #fff;
+  border: none;
+}

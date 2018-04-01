@@ -1,0 +1,65 @@
+/* pages/value/total.wxss */
+page{
+  background-color: rgb(249,249,249);
+  justify-content: center;
+  font-family: '雅黑';
+}
+.container {
+  margin: 20rpx;
+  padding: 6rpx 0;
+  background-color: white;
+}
+.totalTitle {
+  margin: 20rpx 10rpx;
+  font-size: 38rpx;
+}
+.studentDetail {
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  justify-content: space-between;
+  border-bottom: 3px solid #fbab56;
+}
+.totalTable {
+  margin: 20rpx 0;
+}
+.totalTable .tableHead {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #fbab56;
+  color: #fff;
+}
+.totalTable>view>text {
+  padding: 10rpx 0;
+}
+.totalTable .tableHead .subject {
+  flex-basis: 30%;
+  border-right: 2px solid #eee;
+}
+.totalTable .tableHead .item {
+  flex-basis: 55%;
+  border-right: 2px solid #eee;
+}
+.totalTable .tableHead .level {
+  flex-basis: 15%;
+}
+.totalTable .tableRow {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.totalTable .col {
+  display: flex;
+  flex-direction: column;
+}
+.totalTable .tableRow .daoSubject {
+  flex-basis: 30%;
+}
+.totalTable .tableRow .daoItem {
+  flex-basis: 55%;
+}
+.totalTable .tableRow .daoLevel {
+  flex-basis: 15%;
+}

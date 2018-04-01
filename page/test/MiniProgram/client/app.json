@@ -1,41 +1,16 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/bind/bind", 
+    "pages/value/single",
+    "pages/value/total",
+    "pages/show/show",
     "pages/test/test2",
     "pages/test/test",
-    "pages/index/index",
-    "pages/logs/index"
+    "pages/test/test3"
   ],
   "window": {
-    "navigationBarTitleText": "Demo"
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/logs/index",
-        "text": "日志"        
-      },
-      {
-        "pagePath": "pages/test/test",
-        "text": "测试",
-        "iconPath": "pages/test/aojiangico.png",
-        "selectedIconPath": "pages/test/chrome.png"
-      },
-      {
-        "pagePath": "pages/test/test2",
-        "text": "测试二",
-        "iconPath": "pages/test/aojiangico.png",
-        "selectedIconPath": "pages/test/firefox.png"
-      }
-    ],
-    "color": "#33ddaa",
-    "selectedColor": "#ddd666",
-    "backgroundColor": "#000",
-    "borderStyle": "white",
-    "position": "bottom"
+    "navigationBarTitleText": ""
   },
   "networkTimeout": {
     "request": 10000,
